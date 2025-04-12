@@ -8,6 +8,8 @@ const port = 3000;
 app.use(cors());
 app.use(express.json());
 
+
+require('dotenv').config();
 // Tạo kết nối tới cơ sở dữ liệu MySQL
 const db = mysql.createConnection({
   host: 'mysql-3d6d342f-huynhkhoi2002123-e6a2.k.aivencloud.com',

@@ -12,7 +12,7 @@ app.use(express.json());
 require('dotenv').config();
 // Tạo kết nối tới cơ sở dữ liệu MySQL
 const db = mysql.createConnection({
-  host: 'mysql-3d6d342f-huynhkhoi2002123-e6a2.k.aivencloud.com',
+  host: process.env.AIVEN_HOST,
   user: 'avnadmin', // Thay thế với username của bạn
   password: process.env.AIVEN_PASSWORD, // Thay thế với mật khẩu của bạn
   database: 'QuanLyDiem', // Tên cơ sở dữ liệu

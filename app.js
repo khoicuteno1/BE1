@@ -9,7 +9,6 @@ app.use(cors());
 app.use(express.json());
 
 // Tạo kết nối tới cơ sở dữ liệu MySQL
-const db = mysql.createConnection({});
 // Kiểm tra kết nối
 db.connect(err => {
   if (err) {

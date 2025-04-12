@@ -10,11 +10,7 @@ app.use(express.json());
 
 // Tạo kết nối tới cơ sở dữ liệu MySQL
 const db = mysql.createConnection({
-  host: 'mysql-3d6d342f-huynhkhoi2002123-e6a2.k.aivencloud.com',
-  user: 'avnadmin', // Thay thế với username của bạn
-  password: 'AVNS_8pbTDsiPb0wb3sZx_YB', // Thay thế với mật khẩu của bạn
-  database: 'QuanLyDiem', // Tên cơ sở dữ liệu
-  port: '20053'
+  
 });
 
 // Kiểm tra kết nối

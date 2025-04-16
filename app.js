@@ -1,8 +1,6 @@
 import express, { json } from 'express';
 import { createConnection } from 'mysql2/promise';
 import cors from 'cors';
-import dotenv from 'dotenv';
-dotenv.config();
 // Enable CORS for all routes
 const app = express();
 const port = 3000;
@@ -11,9 +9,9 @@ app.use(json());
 
 // Tạo kết nối tới cơ sở dữ liệu MySQL
 const db = await createConnection({
-  host: process.env.HOST,
+  host: 'mysql-3d6d342f-huynhkhoi2002123-e6a2.k.aivencloud.com',
   user: 'avnadmin', 
-  password: process.env.PASS, 
+  password: 'AVNS_8pbTDsiPb0wb3sZx_YB', 
   database: 'QuanLyDiem', 
   port: '20053'
 });
